@@ -37,6 +37,12 @@ int main(void) {
 #endif
 
     // TODO: insert code here
+    LPC_GPIO_T GPIO_T;
+    GPIO_T.DIR = 0xff;
+    GPIO_T.B = PIO0_0;
+
+    Chip_GPIO_Init(&GPIO_T);
+    Chip_GPIO_SetPinOutHigh(&GPIO_T,1,1);
 
     // Force the counter to be placed into memory
     volatile static int i = 0 ;
