@@ -1,1 +1,3 @@
 test 1 for the testing
+
+with in the desktop app, if we add/edit the project firstly comit the change then sync in order to sync the changes to master project/server.
